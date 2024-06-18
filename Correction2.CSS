@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+/*---------- header -----*/
+header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Images/Dog1.\ jpg.jpg);
+}
+header h2 span{
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    font-size: 45px;
+    border-radius: 4px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    position: relative;
+    font-size: 21px;
+}
+nav ul li a span{
+   color: rgba(225, 10, 10, 1);
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+}
+nav ul li a:hover::after{
+width: 100%;
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+#btn1 span{
+    color: white;
+}
+.header-text h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 160px;
+    position: relative;
+}
+.header-text p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 2px;
+}
+/*------- Section ---------*/
+section{
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 25%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    color: #fff;
+    transition: all 0.3s ease;
+    margin-left: 460px;
+}
+.btn-div a{
+    text-decoration: none;
+}
+.section-text{
+    margin-top: 100px;
+}
+.section-text h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 300;
+    position: inherit;
+}
+.section-text2 p{
+    text-align: center;
+    font-size: 17px;
+    font-weight: lighter;
+    display: inline;
+}
+.section-text2{
+    margin-top: 40px;
+}
+.section-2{
+    background: #e65c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+.section-2 h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 60px;
+}
+.Pups{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.Pups-list{
+    position: relative;
+    overflow: hidden;
+}
+.Pups-list img{
+    width: 100%;
+    border-radius: 25px;
+    display: block;
+    transform: transform 0.5s;
+}
+.Tups{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.Tups-list{
+    position: relative;
+    overflow: hidden;
+}
+.Tups-list img{
+    width: 100%;
+    border-radius: 25px;
+    display: block;
+    transform: transform 0.5s;
+}
+.container-2{
+    padding: 10px 10%;
+}
+#btn3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100%;
+    width: 15%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all 0.3s ease;
+    margin-top: 60px;
+}
+#btn3:hover{
+  transform: translateY(-10px);
+  background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#btn3 a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.Pups-list img:hover{
+    transition: 0.2s;
+    transform: translateY(-5px);
+}
+.Tups-list img:hover{
+    transition: 0.2s;
+    transform: translateY(-5px);
+}
+/*------- footer ------------*/
+footer{
+    background: #fc00ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+footer nav h2{
+    font-size: 35px;
+}
+.footer-icons a i{
+font-size: 45px;
+margin-left: 40px;
+}
+.fa-smile-o{
+    font-size: 55px;
+}
+.footer-totti h3{
+    text-align: center;
+    font-size: 25px;
+    color: aqua;
+}
+footer nav ul li{
+    display: block;
+    font-size: 25px;
+    list-style-type: none;
+}
+  footer nav ul li a{
+    color: #ffffff;
+  }
+@media (max-width: 900px){
+    header h2 span{
+        background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+        background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+        font-size: 25px;
+        border-radius: 1px;
+    }
+    nav ul{
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;   
+    }
+    nav i{
+        display: block;
+        color: white;
+        font-size: 25px;
+    }
+    nav ul li{
+        display: block;
+        margin: 45px;
+    }
+    nav ul i{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    nav ul li a::after{
+        content:'';
+        width: 0;
+        height: 3px;
+        background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+        background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.4s;
+    }
+    nav ul li a:hover::after{
+    width: 100%;
+    }
+    #btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: #833ab4;
+        background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+        background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    #btn1 span{
+        color: white;
+    }
+    #btn3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        height: 100%;
+        width: 45%;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: #56CCF2;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        transition: all 0.3s ease;
+        margin-top: 60px;
+    }
+    #btn3 a{
+        color: #2c3e50;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    footer nav h2{
+        font-size: 20px;
+    }
+    .footer-icons a i{
+    font-size: 29px;
+    margin-left: 70px;
+    }
+    .fa-smile-o{
+        font-size: 5px;
+    }
+    .footer-totti h3{
+        text-align: center;
+        font-size: 10px;
+        color: #fd1d1d;
+    }
+    #btn2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        height: 100%;
+        width: 50%;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: #833ab4;
+        background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+        background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+        color: #fff;
+        transition: all 0.3s ease;
+        margin-left: 25%;
+    }
+}

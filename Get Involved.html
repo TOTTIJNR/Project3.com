@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services-Malone</title>
+    <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
+    <link rel="icon" type="image/x-icon" href="https://assets.squarespace.com/universal/default-favicon.ico"/>
+        <link rel="canonical"  href="https://malone-fluid-demo.squarespace.com"/>
+        <link rel="stylesheet" href="Get Involved.CSS">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/25713da959.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!------- header -------->
+<header>
+       <div class="container">
+        <nav>
+            <h2><span><a href="Correction to project 2.html">Malone</a></span></h2>
+            <ul id="sidemenu"><li><a href="Ourmission.html"><span>Our Mission</span></a></li>
+                <li><a href="Team.html"><span>Team</span></a></li>
+                <li><a href="Services.html"><span>Services</span></a></li>
+                <li id="test"><a href="Get Involved.html"><span>Get involved</span></a></li>
+                <li><a href="Blog.html"><span>Blog</span></a></li>
+                <li><button id="btn"><a href="Donate.html"id="btn1"><span>Donate Now</span></a></button></li>
+                <i class="fa fa-window-close" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+       </div>
+</header>
+<!------ section --------->
+<section>
+<div class="Pups">
+    <div class="section-text">
+    <h1>Get Involved</h1>
+    <h2>Adopt</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur</p>
+    <p>adipiscing elit, sed do eiusmod tempor</p>
+    <p>incididunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur</p>
+    <p>adipiscing elit, sed do eiusmod tempor</p>
+    <p>incididunt.</p>
+    <h2>Volunteer</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur</p>
+    <p>adipiscing elit, sed do eiusmod tempor</p>
+    <p>incididunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur</p>
+    <p>adipiscing elit, sed do eiusmod tempor</p>
+    <p>incididunt.</p>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-right">
+                 <form name="submit-to-google-sheet"> 
+                    <p style="font-size: 20px;">Name (required)</p>
+                    <div class="grid"><input type="text" name="N" placeholder="First Name" required class="one">
+                    <input type="text" name="N" placeholder="Last Name" required class="two"></div>
+                    <p style="font-size: 20px;">Email (required)</p>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <p style="font-size: 20px;">Services (required)</p>
+                    <input type="text" name="Services" placeholder="Services" required>
+                    <p style="font-size: 20px;">Message (required)</p>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <div class="mine"><button type="submit">Submit</button></div>
+                </form>
+                 <span id="msg">.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!----- footer ------>
+<Footer>
+    <h2>Malone</h2>
+    <nav>
+        <ul>
+            <li><a href="Ourmission.html">Our Mission</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Get Involved.html">Get Involved</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Donate.html">Donate</a></li>
+        </ul>
+    </nav>
+    <div class="div-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="icons-div">
+        <h3>Made by TottiJNR<i class="fa-solid fa-face-laugh-squint"></i></h3>
+    </div>
+    </Footer>
+<!-------  JavaScript for Toggle Menu ------->
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openMenu(){
+      sidemenu.style.right = "0";
+    }
+    function closeMenu(){
+      sidemenu.style.right = "-300px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwMm2mLJTGMpuqEAdjZfNv4WCerJtcOstLK2necGERxco6vVFkIOKog60qmY1IdYi449Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
